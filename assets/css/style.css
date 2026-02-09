@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(145deg, #2e3a47, #3b4a5a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #ecf0f1;
+  transition: background 0.5s ease;
+}
+
+.calculator {
+  background: linear-gradient(135deg, #374750, #2c3e50);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.calculator:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(241, 196, 15, 0.4); /* subtle glow */
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #f1c40f;
+  text-shadow: 1px 1px 2px #000;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  font-size: 16px;
+  background-color: #3b4a5a;
+  color: #ecf0f1;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #f1c40f;
+  outline: none;
+  background-color: #475763;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#calculate-btn {
+  background-color: #e74c3c;
+}
+
+#calculate-btn:hover {
+  background-color: #c0392b;
+  box-shadow: 0 0 15px #e74c3c;
+  transform: translateY(-2px);
+}
+
+#reset-btn {
+  background-color: #3498db;
+}
+
+#reset-btn:hover {
+  background-color: #2980b9;
+  box-shadow: 0 0 15px #3498db;
+  transform: translateY(-2px);
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ecf0f1;
+  text-shadow: 0 1px 2px #000;
+}
+
+#tip-percentage {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #bdc3c7;
+  text-shadow: 0 1px 2px #000;
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
